@@ -4,11 +4,13 @@ metadata:
   name: nginx
   labels:
     app: nginx
+    demo: helm
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: nginx
+      demo: helm
   template:
     metadata:
       labels:
